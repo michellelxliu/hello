@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;padding:0}
+  a{color:inherit}
+  @keyframes bgSoften{from{filter:blur(0px) brightness(1) saturate(1)}to{filter:blur(6px) brightness(.6) saturate(.85)}}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</helmet>
+<div style="position:relative;width:100%;min-height:100vh;overflow:hidden;font-family:'Inter',sans-serif;background:#2a2518">
+  <img src="uploads/OctoberNoon.jpg" style="position:fixed;inset:0;width:100%;height:100%;object-fit:cover;animation:bgSoften 1.4s ease forwards">
+  <div style="position:relative;min-height:100vh">
+    <a href="index.html" style="position:absolute;top:26px;left:26px;color:#f0ead9;text-decoration:none;font:500 12px/1 'Inter',sans-serif;letter-spacing:.06em;opacity:.75">home</a>
+    <div style="max-width:680px;margin:0 auto;padding:20px 24px 100px;opacity:0;animation:fadeUp 1.1s ease .8s forwards">
+      <div style="font:400 44px/1.15 'Newsreader',serif;color:#fdfaf2;text-shadow:0 2px 14px rgba(0,0,0,.45);margin-bottom:36px">writing</div>
+
+      <div style="padding:26px 0;border-top:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2)">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+          <div style="font:400 12px/1 'Inter',sans-serif;color:#e3c98f;letter-spacing:.05em;text-transform:uppercase;text-shadow:0 1px 6px rgba(0,0,0,.4)">Jul 13, 2026</div>
+          <div style="font:500 10px/1 'Inter',sans-serif;color:#2a2518;letter-spacing:.05em;text-transform:uppercase;background:#e3c98f;padding:3px 8px;border-radius:10px">poetry</div>
+        </div>
+        <a href="at-the-temple.html" style="text-decoration:none"><div style="font:500 26px/1.3 'Newsreader',serif;color:#fdfaf2;margin-bottom:10px;text-shadow:0 2px 10px rgba(0,0,0,.45)">at the temple</div></a>
+      </div>
+
+      <div style="padding:26px 0;border-top:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2)">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+          <div style="font:400 12px/1 'Inter',sans-serif;color:#e3c98f;letter-spacing:.05em;text-transform:uppercase;text-shadow:0 1px 6px rgba(0,0,0,.4)">Jul 13, 2026</div>
+          <div style="font:500 10px/1 'Inter',sans-serif;color:#2a2518;letter-spacing:.05em;text-transform:uppercase;background:#e3c98f;padding:3px 8px;border-radius:10px">poetry</div>
+        </div>
+        <a href="vancouver-days.html" style="text-decoration:none"><div style="font:500 26px/1.3 'Newsreader',serif;color:#fdfaf2;margin-bottom:10px;text-shadow:0 2px 10px rgba(0,0,0,.45)">Vancouver Days</div></a>
+      </div>
+
+      <div style="padding:26px 0;border-top:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2)">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+          <div style="font:400 12px/1 'Inter',sans-serif;color:#e3c98f;letter-spacing:.05em;text-transform:uppercase;text-shadow:0 1px 6px rgba(0,0,0,.4)">Jul 12, 2026</div>
+          <div style="font:500 10px/1 'Inter',sans-serif;color:#2a2518;letter-spacing:.05em;text-transform:uppercase;background:#e3c98f;padding:3px 8px;border-radius:10px">poetry</div>
+        </div>
+        <a href="film-of-mildew.html" style="text-decoration:none"><div style="font:500 26px/1.3 'Newsreader',serif;color:#fdfaf2;margin-bottom:10px;text-shadow:0 2px 10px rgba(0,0,0,.45)">Film of Mildew</div></a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</x-dc>
+</body>
+</html>
